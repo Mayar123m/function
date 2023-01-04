@@ -1,15 +1,24 @@
-fun main(){
+fun main() {
     sayHello()
-
-
-
+    old()
 }
-fun sayHello(): Unit{
-    println("Hello?")
-    println(typeMe())
-    println("Hello?")
 
+fun sayHello() {
+    println("Hello?")
+    println("Hello?")
 }
-fun typeMe(): String {
-    return "how do u do?"
+
+
+fun old() {
+    println("how old are you?")
+
+    fun age() {
+        println(40)
+
+        fun nice() {
+            println("nice to meet you")
+        }
+        nice()
+    }
+    age()
 }
